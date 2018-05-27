@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Book Lister App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l8 offset-l2">
+        <div class="card center-align center">
+          <div class="card-action teal lighten-2 white-text z-depth-3">
+            <h1>Book Lister App</h1>
+          </div>
+        </div>        
+        <div class="card">
+          <div class="card-content teal lighten-5  z-depth-3">
+            <h3 class="center-align">Add Book</h3><br>
+            <div class="form-field">
+              <label for="BookTitle">Book Title</label>
+              <input type="text" id="BookTitle">
+            </div><br>
+            <div class="form-field">
+              <label for="Author">Author</label>
+              <input type="text" id="Author">
+            </div><br>
+            <div class="form-field">
+              <label for="ISBN">ISBN</label>
+              <input type="text" id="ISBN">
+            </div><br>
+            <div class="form-field center-align lighten-2">
+              <button class="btn-large">Submit</button>
+            </div><br>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col s12 l8 offset-l2">
+            <ul class="collection">
+              <li class="collection-item centered teal lighten-1 z-depth-3 center-align white-text">Book Listings</li>
+            </ul> 
+  <table class="col l12 highlight centered teal lighten-5 z-depth-3">
+      <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+        </tr>
+      </thead>
+
+      <tbody id="book-list">
+
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
